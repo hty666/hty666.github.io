@@ -266,7 +266,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">709</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">712</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -401,20 +401,20 @@ height:50vh;
 </blockquote>
 <h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>首先在计算机随便（你喜欢就好）一个盘里创建一个空的文件夹（hexo）,比如我的在F盘</p>
 <p><div align="center"> <img src="https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/hexo.jpg" alt="hexo"><div></div></div></p>
-<p>右键这个文件，点击git bash here，然后在git里面输入<code>npm install -g hexo-cil</code>，直到下面出现<code>+ hexo-cli@1.1.0</code>就算安装成功了</p>
+<p>右键这个文件，点击git bash here，然后在git里面输入<code>$npm install -g hexo-cil</code>，直到下面出现<code>+ hexo-cli@1.1.0</code>就算安装成功了</p>
 <p><div align="center"> <img src="https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/安装hexo.jpg" alt="安装hexo"><div></div></div></p>
 <p>安装成功后关闭git！关闭git！关闭git！</p>
 <h3 id="创建一个blog"><a href="#创建一个blog" class="headerlink" title="创建一个blog"></a>创建一个blog</h3><p>在你的hexo文件夹里创建一个blog的空文件(我图片里的blog打错了，不要学我)</p>
 <p><div align="center"> <img src="https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/创建blog.jpg" alt="blog"><div></div></div></p>
-<p>右键点击blog，然后打开git Bash here，在里面输入<code>hexo init</code>!输入hexo init!输入hexo init!（记住不是git init）将这个文件夹初始化</p>
+<p>右键点击blog，然后打开git Bash here，在里面输入<code>$hexo init</code>!输入hexo init!输入hexo init!（记住不是git init）将这个文件夹初始化</p>
 <p><div align="center"> <img src="https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/hexo%20init.jpg" alt="bolg init"><div></div></div></p>
 <p>成功之后像这样</p>
 <p><div align="center"> <img src="https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/init.jpg" alt="init"><div></div></div></p>
 <p>就会出来这样一堆文件</p>
 <p><div align="center"> <img src="https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/wen%20jian.jpg" alt="wen jian"><div></div></div></p>
-<p>然后输入<code>hexo install</code>安装一些依赖</p>
+<p>然后输入<code>$hexo install</code>安装一些依赖</p>
 <p><div align="center"> <img src="https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/hexo%20insatll.jpg" alt="hexo install"><div></div></div></p>
-<p>再安装一下插件<code>npm install hexo-deployer-git --save</code>,</p>
+<p>再安装一下插件<code>$npm install hexo-deployer-git --save</code>,</p>
 <p><div align="center"> <img src="https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/deployer.jpg" alt="cha jian"><div></div></div></p>
 <p>打开github，新建一个项目，仓库的名字有一个专属的命名规则，比如（<code>你github的用户名.github.io</code>）,勾上<code>Lnitialize this repository with a README</code>，就创建好了，我这边已经有一个了所以会提示我此命名的库存已经存在了</p>
 <p><div align="center"> <img src="https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/name.jpg" alt="name"><div></div></div></p>
@@ -422,9 +422,9 @@ height:50vh;
 <p><div align="center"> <img src="https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/clone.jpg" alt="clone"><div></div></div></p>
 <p>进入你前面建好的blog文件夹，打开config.yml，翻到最底下，在type里输入git，type:(空格)git（在里面输入的时候在前面加个空格！！！不然不会生效），空格另起一行输入repo：（你在github里复制的网址，粘贴的时候要在前面加个空格！！！），空格再起一行输入branch： master（前面加空格再输入！！！）第 9 行的<code>author</code>改成你的名字</p>
 <p><div align="center"> <img src="https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/yml.jpg" alt="yml"><div></div></div></p>
-<p>现在在git里面输入<code>hexo g -d</code>就是把你的hexo部署到git上面，成功之后，在网页上输入（你的用户名.github.io）就可以进去了（下面图片是我自己找的，因为我的主题已经设置过了会不太一样，所以用户名有问题不用怀疑）</p>
+<p>现在在git里面输入<code>$hexo g -d</code>就是把你的hexo部署到git上面，成功之后，在网页上输入（你的用户名.github.io）就可以进去了（下面图片是我自己找的，因为我的主题已经设置过了会不太一样，所以用户名有问题不用怀疑）</p>
 <p><div align="center"> <img src="https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/wangye.jpg" alt="wangye"><div></div></div></p>
-<p>如果想自己新建一个文件夹，打开blog里的source，进入_posts，右键创建一个.txt的文件，把后缀改成.md的文件就可以写啦，每次你更改里面的东西都要右键你的blog点击git bash here在里面输入<code>hexo g -d</code>，刷新一下服务器就可以了，这个东西传输的比较慢，如果不行耐心等待一会再刷新下界面试试</p>
+<p>如果想自己新建一个文件夹，打开blog里的source，进入_posts，右键创建一个.txt的文件，把后缀改成.md的文件就可以写啦，每次你更改里面的东西都要右键你的blog点击git bash here在里面输入<code>$hexo g -d</code>，刷新一下服务器就可以了，这个东西传输的比较慢，如果不行耐心等待一会再刷新下界面试试</p>
 
     </article>
     <!-- license  -->
@@ -433,7 +433,7 @@ height:50vh;
             <p>原文作者：<a href="http://hty666.github.io">hty</a>
             </p><p>原文链接：<a href="http://hty666.github.io/2018/12/22/hexo创建博客/">http://hty666.github.io/2018/12/22/hexo创建博客/</a>
             </p><p>发表日期：<a href="http://hty666.github.io/2018/12/22/hexo创建博客/">December 22nd 2018, 2:30:35 pm</a>
-            </p><p>更新日期：<a href="http://hty666.github.io/2018/12/22/hexo创建博客/">December 22nd 2018, 7:47:44 pm</a>
+            </p><p>更新日期：<a href="http://hty666.github.io/2018/12/22/hexo创建博客/">December 22nd 2018, 7:49:27 pm</a>
             </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
