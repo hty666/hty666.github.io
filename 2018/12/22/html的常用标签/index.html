@@ -266,7 +266,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">1.2k</span>阅读时长: <span class="post-count reading-time">5 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">1.3k</span>阅读时长: <span class="post-count reading-time">5 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -410,26 +410,65 @@ height:50vh;
 <h3 id="body标签"><a href="#body标签" class="headerlink" title="body标签"></a>body标签</h3><blockquote>
 <p>body是一个页面的身体，body元素定义文档的主体（所有主流浏览器都支持body`标签）</p>
 </blockquote>
-<p>设置字符集，如果字符集不对，可能导致乱码。一般都是utf-8国际编码，例如<figure class="highlight plain"><figcaption><span>http-equiv</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### title标签</span><br><span class="line">&gt; 相关标签，title定义文档的标题,一般建议不要超过32位</span><br><span class="line"></span><br><span class="line">例如```&lt;title&gt;网页标题 &lt;/title&gt;```，</span><br><span class="line"></span><br><span class="line">### meta标签</span><br><span class="line">&gt; meta元素可提供有关页面的元信息，比如针对搜索引擎和更新频度的描述和关键词。标签位于文档的头部，不包含任何内容。```&lt;meta&gt;```标签的属性定义了与文档相关联的名称/值对。</span><br><span class="line"></span><br><span class="line">### link标签</span><br><span class="line">&gt; link链接一个外部样式表</span><br><span class="line"></span><br><span class="line">一个简单的HTML结构就是</span><br><span class="line">1. ```&lt;!DOCTYPE html&gt;</span><br></pre></td></tr></table></figure></p>
-<ol start="2">
-<li><figure class="highlight plain"><figcaption><span>lang</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3. ```&lt;head&gt;</span><br></pre></td></tr></table></figure>
+<p>设置字符集，如果字符集不对，可能导致乱码。一般都是utf-8国际编码<br>例如<code>&lt;meta http-equiv=Content-Type content=&quot;text/html;charset=utf-8&quot;&gt;</code>，</p>
+<h3 id="title标签"><a href="#title标签" class="headerlink" title="title标签"></a>title标签</h3><blockquote>
+<p>相关标签，title定义文档的标题,一般建议不要超过32位</p>
+</blockquote>
+<p>例如<code>&lt;title&gt;网页标题 &lt;/title&gt;</code>，</p>
+<h3 id="meta标签"><a href="#meta标签" class="headerlink" title="meta标签"></a>meta标签</h3><blockquote>
+<p>meta元素可提供有关页面的元信息，比如针对搜索引擎和更新频度的描述和关键词。标签位于文档的头部，不包含任何内容。meta标签的属性定义了与文档相关联的名称/值对。</p>
+</blockquote>
+<h3 id="link标签"><a href="#link标签" class="headerlink" title="link标签"></a>link标签</h3><blockquote>
+<p>link链接一个外部样式表</p>
+</blockquote>
+<p>一个简单的HTML结构就是</p>
+<ol>
+<li><code>&lt;!DOCTYPE html&gt;</code></li>
+<li><code>&lt;html lang=&quot;zh-Hans&quot;&gt;</code></li>
+<li><code>&lt;head&gt;</code></li>
+<li><code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code></li>
+<li><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code></li>
+<li><code>&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;</code></li>
+<li><code>&lt;title&gt;Document&lt;/title&gt;</code></li>
+<li><code>&lt;/head&gt;</code></li>
+<li><code>&lt;body&gt;</code></li>
+<li>&lt;内容&gt;</li>
+<li><code>&lt;/body&gt;</code></li>
+<li><code>&lt;/html&gt;</code>,<blockquote>
+<p>整个框架被一个head和body包裹起来</p>
+</blockquote>
 </li>
-<li><figure class="highlight plain"><figcaption><span>charset</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5.    ```&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><figure class="highlight plain"><figcaption><span>http-equiv</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">7.    ```&lt;title&gt;Document&lt;/title&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">9. ```&lt;body&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>&lt;内容&gt;</p>
-</li>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">12. ```&lt;/html&gt;```,</span><br><span class="line">&gt; 整个框架被一个head和body包裹起来</span><br><span class="line"></span><br><span class="line">### 常用标签</span><br><span class="line">h1-h6标签可定义标题</span><br><span class="line">p标签定义段落</span><br><span class="line">b/strong标签加粗(strong的加粗表示更加生动重要的文本)</span><br><span class="line">em标签来表示强调的文本，斜体</span><br><span class="line">u标签下划线</span><br><span class="line">br标签表示回车换行</span><br><span class="line">hr标签表示水平线</span><br><span class="line">span标签被用来组合文档中的行内元素。</span><br><span class="line">blockquote标签表示块引用</span><br><span class="line">sub标签为下标</span><br><span class="line">sup标签为上标</span><br><span class="line"></span><br><span class="line">### div标签</span><br><span class="line">&gt; ```&lt;div&gt;```标签定义文档中的分区或节，可以把文档分割为独立的、不同的部分，主要用于布局。</span><br><span class="line"></span><br><span class="line">### a标签</span><br><span class="line">&gt; ```&lt;a&gt;```定义超链接，指定页面间的跳转。链接可以指向外部链接或者页面内部id锚点，可以在当前页面打开，新开窗口。</span><br><span class="line"></span><br><span class="line">例如```&lt;a href=&quot;指向的链接地址&quot;&gt;网址的ID&lt;/a&gt;，例如&lt;a href=&quot;https://www.baidu.com&quot; &gt;百度&lt;/a&gt;```，</span><br><span class="line"></span><br><span class="line">### iframe标签</span><br><span class="line">&gt; ```&lt;iframe&gt;```就是新建一个窗口会创建包含另外一个文档的内联框架（即行内框架）。所有iframe里都要写一个frameborder=0</span><br><span class="line"></span><br><span class="line">例如```&lt;iframe name=xxx src=&quot;#&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;```，</span><br><span class="line"></span><br><span class="line">### img标签</span><br><span class="line">&gt; ```&lt;img&gt;```主要在网页中插入图像，可以定义图片替换文本、显示宽度和高度、是否带边框。</span><br><span class="line"></span><br><span class="line">例如```&lt;img src=&quot;图片地址&quot;  alt=&quot;图片名&quot; /&gt;```，</span><br><span class="line"></span><br><span class="line">### ```&lt;ul&gt;和&lt;li&gt;```无序列表标签</span><br><span class="line">&gt;有序标签在页面的显示1. 2. 3.  a. b. c. I. II. III.</span><br><span class="line">&gt; 无序标签显示为 · </span><br><span class="line"></span><br><span class="line">ol和li有序列表标签，可以使用type属性规定有序列表符号的类型。他们都有一个子标签```&lt;li&gt;```，</span><br><span class="line"></span><br><span class="line">### form和input标签</span><br><span class="line">&gt; ```&lt;form&gt;```是一个提交表单。定义提交方式、提交地址、表单字符集以及如何对其进行编码，需要提交的表单一定要放在form标签内。</span><br><span class="line">&gt; ```&lt;input&gt;```一个简单的HTML表单，包含两个文本输入框和一个提交按钮。</span><br><span class="line"></span><br><span class="line">1. ```&lt;a href=&quot;xxx&quot;&gt;link&lt;/a&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><figure class="highlight plain"><figcaption><span>action</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3.    ```&lt;input type=&quot;text&quot; name=&quot;usernmae&quot;&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><figure class="highlight plain"><figcaption><span>type</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5. ```&lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>&lt;/form&gt;</code>,</p>
-</li>
+</ol>
+<h3 id="常用标签"><a href="#常用标签" class="headerlink" title="常用标签"></a>常用标签</h3><p>h1-h6标签可定义标题<br>p标签定义段落<br>b/strong标签加粗(strong的加粗表示更加生动重要的文本)<br>em标签来表示强调的文本，斜体<br>u标签下划线<br>br标签表示回车换行<br>hr标签表示水平线<br>span标签被用来组合文档中的行内元素。<br>blockquote标签表示块引用<br>sub标签为下标<br>sup标签为上标</p>
+<h3 id="div标签"><a href="#div标签" class="headerlink" title="div标签"></a>div标签</h3><blockquote>
+<p><code>&lt;div&gt;</code>标签定义文档中的分区或节，可以把文档分割为独立的、不同的部分，主要用于布局。</p>
+</blockquote>
+<h3 id="a标签"><a href="#a标签" class="headerlink" title="a标签"></a>a标签</h3><blockquote>
+<p><code>&lt;a&gt;</code>定义超链接，指定页面间的跳转。链接可以指向外部链接或者页面内部id锚点，可以在当前页面打开，新开窗口。</p>
+</blockquote>
+<p>例如<code>&lt;a href=&quot;指向的链接地址&quot;&gt;网址的ID&lt;/a&gt;，例如&lt;a href=&quot;https://www.baidu.com&quot; &gt;百度&lt;/a&gt;</code>，</p>
+<h3 id="iframe标签"><a href="#iframe标签" class="headerlink" title="iframe标签"></a>iframe标签</h3><blockquote>
+<p><code>&lt;iframe&gt;</code>就是新建一个窗口会创建包含另外一个文档的内联框架（即行内框架）。所有iframe里都要写一个frameborder=0</p>
+</blockquote>
+<p>例如<code>&lt;iframe name=xxx src=&quot;#&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;</code>，</p>
+<h3 id="img标签"><a href="#img标签" class="headerlink" title="img标签"></a>img标签</h3><blockquote>
+<p><code>&lt;img&gt;</code>主要在网页中插入图像，可以定义图片替换文本、显示宽度和高度、是否带边框。</p>
+</blockquote>
+<p>例如<code>&lt;img src=&quot;图片地址&quot;  alt=&quot;图片名&quot; /&gt;</code>，</p>
+<h3 id="lt-ul-gt-和-lt-li-gt-无序列表标签"><a href="#lt-ul-gt-和-lt-li-gt-无序列表标签" class="headerlink" title="&lt;ul&gt;和&lt;li&gt;无序列表标签"></a><code>&lt;ul&gt;和&lt;li&gt;</code>无序列表标签</h3><blockquote>
+<p>有序标签在页面的显示1. 2. 3.  a. b. c. I. II. III.<br>无序标签显示为 · </p>
+</blockquote>
+<p>ol和li有序列表标签，可以使用type属性规定有序列表符号的类型。他们都有一个子标签<code>&lt;li&gt;</code>，</p>
+<h3 id="form和input标签"><a href="#form和input标签" class="headerlink" title="form和input标签"></a>form和input标签</h3><blockquote>
+<p>form标签是一个提交表单。定义提交方式、提交地址、表单字符集以及如何对其进行编码，需要提交的表单一定要放在form标签内。<br>input标签一个简单的HTML表单，包含两个文本输入框和一个提交按钮。</p>
+</blockquote>
+<ol>
+<li><code>&lt;a href=&quot;xxx&quot;&gt;link&lt;/a&gt;</code></li>
+<li><code>&lt;form action=&quot;users&quot; method=&quot;post&quot;&gt;</code></li>
+<li><code>&lt;input type=&quot;text&quot; name=&quot;usernmae&quot;&gt;</code></li>
+<li><code>&lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;</code></li>
+<li><code>&lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;</code></li>
+<li><code>&lt;/form&gt;</code>,</li>
 </ol>
 <h3 id="button标签"><a href="#button标签" class="headerlink" title="button标签"></a>button标签</h3><blockquote>
 <p>button定义一个按钮</p>
@@ -445,12 +484,12 @@ height:50vh;
 <li><code>&lt;th&gt;日期&lt;/th&gt;</code> </li>
 <li><code>&lt;th&gt;标题&lt;/th&gt;</code> </li>
 <li><code>&lt;/tr&gt;</code> </li>
-<li><code>&lt;tr&gt;</code> </li>
+<li><code>&lt;tr&gt;</code></li>
 <li><code>&lt;td&gt;一班&lt;/td&gt;</code> </li>
 <li><code>&lt;td&gt;2018-12-22&lt;/td&gt;</code> </li>
 <li><code>&lt;td&gt;标题1&lt;/td&gt;</code> </li>
 <li><code>&lt;/tr&gt;</code> </li>
-<li><code>&lt;tr&gt;</code> </li>
+<li><code>&lt;tr&gt;</code></li>
 <li><code>&lt;td&gt;二班&lt;/td&gt;</code> </li>
 <li><code>&lt;td&gt;2018-12-22&lt;/td&gt;</code> </li>
 <li><code>&lt;td&gt;标题2&lt;/td&gt;</code> </li>
@@ -465,7 +504,7 @@ height:50vh;
             <p>原文作者：<a href="http://hty666.github.io">hty</a>
             </p><p>原文链接：<a href="http://hty666.github.io/2018/12/22/html的常用标签/">http://hty666.github.io/2018/12/22/html的常用标签/</a>
             </p><p>发表日期：<a href="http://hty666.github.io/2018/12/22/html的常用标签/">December 22nd 2018, 9:03:24 pm</a>
-            </p><p>更新日期：<a href="http://hty666.github.io/2018/12/22/html的常用标签/">December 23rd 2018, 12:05:27 am</a>
+            </p><p>更新日期：<a href="http://hty666.github.io/2018/12/22/html的常用标签/">December 23rd 2018, 12:15:47 am</a>
             </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -597,7 +636,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#最基础的HTML结构"><span class="toc-number">1.</span> <span class="toc-text">最基础的HTML结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#html标签"><span class="toc-number">1.1.</span> <span class="toc-text">html标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lang标签"><span class="toc-number">1.2.</span> <span class="toc-text">lang标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#head标签"><span class="toc-number">1.3.</span> <span class="toc-text">head标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#body标签"><span class="toc-number">1.4.</span> <span class="toc-text">body标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#button标签"><span class="toc-number">1.5.</span> <span class="toc-text">button标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#table标签和tr标签，th标签和td标签，合并单元格。"><span class="toc-number">1.6.</span> <span class="toc-text">table标签和tr标签，th标签和td标签，合并单元格。</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#最基础的HTML结构"><span class="toc-number">1.</span> <span class="toc-text">最基础的HTML结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#html标签"><span class="toc-number">1.1.</span> <span class="toc-text">html标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lang标签"><span class="toc-number">1.2.</span> <span class="toc-text">lang标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#head标签"><span class="toc-number">1.3.</span> <span class="toc-text">head标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#body标签"><span class="toc-number">1.4.</span> <span class="toc-text">body标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#title标签"><span class="toc-number">1.5.</span> <span class="toc-text">title标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#meta标签"><span class="toc-number">1.6.</span> <span class="toc-text">meta标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#link标签"><span class="toc-number">1.7.</span> <span class="toc-text">link标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常用标签"><span class="toc-number">1.8.</span> <span class="toc-text">常用标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#div标签"><span class="toc-number">1.9.</span> <span class="toc-text">div标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#a标签"><span class="toc-number">1.10.</span> <span class="toc-text">a标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#iframe标签"><span class="toc-number">1.11.</span> <span class="toc-text">iframe标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#img标签"><span class="toc-number">1.12.</span> <span class="toc-text">img标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-ul-gt-和-lt-li-gt-无序列表标签"><span class="toc-number">1.13.</span> <span class="toc-text">&lt;ul&gt;和&lt;li&gt;无序列表标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#form和input标签"><span class="toc-number">1.14.</span> <span class="toc-text">form和input标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#button标签"><span class="toc-number">1.15.</span> <span class="toc-text">button标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#table标签和tr标签，th标签和td标签，合并单元格。"><span class="toc-number">1.16.</span> <span class="toc-text">table标签和tr标签，th标签和td标签，合并单元格。</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
