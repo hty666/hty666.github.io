@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>git init，git add，git commit -v这三个命令的使用 · hty&#39;s Studio</title>
+    <title>如何用hexo创建一个博客 · hty&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/">hty&#39;s Studio.</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">git init，git add，git commit -v这三个命令的使用</a>
+                <a href="#" class="post-name">如何用hexo创建一个博客</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            git init，git add，git commit -v这三个命令的使用
+            如何用hexo创建一个博客
             <!-- 404 -->
             
         </h1>
@@ -266,12 +266,12 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">171</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">835</span>阅读时长: <span class="post-count reading-time">3 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2018/12/19</span>
+                    <span class="post-intro-time">2018/12/22</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -395,22 +395,32 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h3 id="git-init"><a href="#git-init" class="headerlink" title="git init"></a>git init</h3><p>用法<br>进入某个空的文件夹下，打开Git Bash命令窗口输入git init<br>作用<br>主要用来初始化一个空的git本地仓库。执行完上面的命令，当前目录下会自动生成.git隐藏文件夹，该隐藏文件夹就是git版本库</p>
-<p><div align="center"><img src="https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/QQ图片20181204155213.jpg" alt="git init"><div></div></div></p>
-<p><div align="center">git init<div></div></div></p>
-<h3 id="git-add"><a href="#git-add" class="headerlink" title="git add"></a>git add</h3><p>用法<br>命令将文件内容添加到索引(将修改添加到暂存区)<br>作用<br>以准备为下一次提交分段的内容</p>
-<h3 id="git-commit-v"><a href="#git-commit-v" class="headerlink" title="git commit -v"></a>git commit -v</h3><p>git commit -v<br>用法<br>在git bush中输入git commit后会进入vim模式<br>作用<br>显示有哪些更改的<br>退出的时候狂按ESC然后输入:q!（冒号也要输入)</p>
-<p><div align="center"> <img src="https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/3FU1N%5BJX7R%5BS%7D6(NOFJKFY0.jpg" alt="git commit-v"><div></div></div></p>
-<p><div align="center">git commit-v<div></div></div></p>
+        <h2 id="hexo是什么"><a href="#hexo是什么" class="headerlink" title="hexo是什么"></a>hexo是什么</h2><p>如果一个初学者想用hexo搭建一个blog，首先要先了解一下hexo是什么</p>
+<blockquote>
+<p>hexo实际上可以看到一个程序，是用来生成博客页面。在本地电脑上用hexo生成了博客页面，上传到github的仓库，就可以让大家访问仓库下的页面了，也就是访问博客，这就是Hexo的原理。</p>
+</blockquote>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>首先在计算机随便（你喜欢就好）一个盘里创建一个空的文件夹（hexo）,比如我的在F盘</p>
+<p><div align="center"><img src="https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/hexo.jpg" alt="hexo"><div></div></div></p>
+<p>右键这个文件，点击git Bash here，在git里面输入<figure class="highlight plain"><figcaption><span>install -g hexo-cil```，直到下面出现+ hexo-cli@1.1.0就算安装成功了</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;div align=&quot;center&quot;&gt;![安装hexo](https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/安装hexo.jpg)&lt;div&gt;</span><br><span class="line"></span><br><span class="line">安装成功后关闭git！关闭git！关闭git！</span><br><span class="line"></span><br><span class="line">### 创建一个blog</span><br><span class="line">在你的hexo文件夹里创建一个blog的空文件(我图片里的blog打错了，不要学我)</span><br><span class="line">&lt;div align=&quot;center&quot;&gt;![blog](https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/创建blog.jpg)&lt;div&gt;</span><br><span class="line"></span><br><span class="line">右键点击blog，然后打开git Bash here，在里面输入```hexo init```!输入hexo init!输入hexo init!（记住不是git init）将这个文件夹初始化</span><br><span class="line">&lt;div align=&quot;center&quot;&gt;![bolg init](https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/hexo%20init.jpg)&lt;div&gt;</span><br><span class="line"></span><br><span class="line">成功之后像这样</span><br><span class="line">&lt;div align=&quot;center&quot;&gt;![init](https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/init.jpg)&lt;div&gt;</span><br><span class="line"></span><br><span class="line">就会出来这样一堆文件</span><br><span class="line">&lt;div align=&quot;center&quot;&gt;![wen jian](https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/wen%20jian.jpg)&lt;div&gt;</span><br><span class="line"></span><br><span class="line">然后输入```hexo install```安装一些依赖</span><br><span class="line">&lt;div align=&quot;center&quot;&gt;![hexo install](https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/hexo%20insatll.jpg)&lt;div&gt;</span><br><span class="line"></span><br><span class="line">再安装一下插件```npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<p><div align="center"><img src="https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/deployer.jpg" alt="cha jian"><div></div></div></p>
+<p>打开github，新建一个项目，仓库的名字有一个专属的命名规则，比如（<code>你github的用户名.github.io</code>）,勾上<code>Lnitialize this repository with a README</code>，就创建好了，我这边已经有一个了所以会提示我此命名的库存已经存在了</p>
+<p><div align="center"><img src="https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/name.jpg" alt="name"><div></div></div></p>
+<p>建好之后进入这个库，点击右边的<code>clone or download</code>选择use SSH复制</p>
+<p><div align="center"><img src="https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/clone.jpg" alt="clone"><div></div></div></p>
+<p>进入你前面建好的blog文件夹，打开config.yml，翻到最底下，在type里输入git，type:(空格)git（在里面输入的时候在前面加个空格！！！不然不会生效），空格另起一行输入repo：（你在github里复制的网址，粘贴的时候要在前面加个空格！！！），空格再起一行输入branch： master（前面加空格再输入！！！）第 9 行的<code>author</code>改成你的名字</p>
+<p><div align="center"><img src="https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/yml.jpg" alt="yml"><div></div></div></p>
+<p>现在在git里面输入<code>hexo g -d</code>就是把你的hexo部署到git上面，成功之后，在网页上输入（你的用户名.github.io）就可以进去了（下面图片是我自己找的，因为我的主题已经设置过了会不太一样，所以用户名有问题不用怀疑）</p>
+<p><div align="center"><img src="https://raw.githubusercontent.com/hty666/img-bolg/master/img-bolg/hexo创建bolg/wangye.jpg" alt="wangye"><div></div></div></p>
+<p>如果想自己新建一个文件夹，打开blog里的source，进入_posts，右键创建一个.txt的文件，把后缀改成.md的文件就可以写啦，每次你更改里面的东西都要<code>hexo g -d</code>一下，刷新一下服务器就可以了</p>
 
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>原文作者：<a href="http://hty666.github.io">hty</a>
-            </p><p>原文链接：<a href="http://hty666.github.io/2018/12/19/git init，git add，git commit -v这三个命令的使用/">http://hty666.github.io/2018/12/19/git init，git add，git commit -v这三个命令的使用/</a>
-            </p><p>发表日期：<a href="http://hty666.github.io/2018/12/19/git init，git add，git commit -v这三个命令的使用/">December 19th 2018, 4:01:57 pm</a>
-            </p><p>更新日期：<a href="http://hty666.github.io/2018/12/19/git init，git add，git commit -v这三个命令的使用/">December 19th 2018, 6:12:47 pm</a>
+            </p><p>原文链接：<a href="http://hty666.github.io/2018/12/22/hexo创建博客/">http://hty666.github.io/2018/12/22/hexo创建博客/</a>
+            </p><p>发表日期：<a href="http://hty666.github.io/2018/12/22/hexo创建博客/">December 22nd 2018, 2:30:35 pm</a>
+            </p><p>更新日期：<a href="http://hty666.github.io/2018/12/22/hexo创建博客/">December 22nd 2018, 7:06:26 pm</a>
             </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -418,17 +428,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href="/2018/12/19/关于HTML/" title="关于HTML">
-                    <div class="nextTitle">关于HTML</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href="/2018/12/19/ls cat mv touch4个命令的使用以及如何使用 explainshell.com 这个网站/" title="ls cat mv touch4个命令的使用以及如何使用 explainshell.com 这个网站">
-                    <div class="prevTitle">ls cat mv touch4个命令的使用以及如何使用 explainshell.com 这个网站</div>
+                <a href="/2018/12/19/HTTP包括哪些部分/" title="HTTP请求，响应，curl命令">
+                    <div class="prevTitle">HTTP请求，响应，curl命令</div>
                 </a>
             
         </li>
@@ -547,7 +552,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#git-init"><span class="toc-number">1.</span> <span class="toc-text">git init</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#git-add"><span class="toc-number">2.</span> <span class="toc-text">git add</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#git-commit-v"><span class="toc-number">3.</span> <span class="toc-text">git commit -v</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo是什么"><span class="toc-number">1.</span> <span class="toc-text">hexo是什么</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装hexo"><span class="toc-number">1.1.</span> <span class="toc-text">安装hexo</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
