@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>hty&#39;s Studio</title>
+    <title>HTML的常用标签 · hty&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -203,12 +203,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/">hty&#39;s Studio.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">HTML的常用标签</a>
+            </div>
+    </div>
     
     <a class="home-link" href="/">hty's Studio.</a>
 </header>
@@ -220,24 +231,68 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            HTML的常用标签
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">1k</span>阅读时长: <span class="post-count reading-time">4 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2018/12/22</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -338,206 +393,89 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2018/12/22/html的常用标签/">
-            
-                <span>HTML的常用标签</span>
-        </a>
-        <div class="abstract-content">
-            最基础的HTML结构 标签之前。``````是指示 web 浏览器关于页面使用哪个HTML版本进行编写的指令。12```&lt;html&gt;
-此元素可告知浏览器其自身是一个 HTML 文档。12```&lt;lang&gt;
-写在html标签中的lang属性作用：声明当前页面的语言类型。
-123head标签是html的头部也是所有头部元素的容器。head标签内的元素可包含脚本、样式表和提供页面的元信息等等。以下标签都可以添加到 head 部分：title、base、link、meta、script 以及style。头部的内容不会显示在浏览器里。```&lt;body&gt;
-12设置...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/12/22</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2018/12/22/hexo创建博客/">
-            
-                <span>如何用hexo创建一个博客</span>
-        </a>
-        <div class="abstract-content">
-            hexo是什么如果一个初学者想用hexo搭建一个blog，首先要先了解一下hexo是什么
+            <main class="main post-page">
+    <article class="article-entry">
+        <h3 id="最基础的HTML结构"><a href="#最基础的HTML结构" class="headerlink" title="最基础的HTML结构"></a>最基础的HTML结构</h3><figure class="highlight plain"><figcaption><span><html> 标签之前。```<!DOCTYPE>```是指示 web 浏览器关于页面使用哪个HTML版本进行编写的指令。</html></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```&lt;html&gt;</span><br></pre></td></tr></table></figure>
+<p>此元素可告知浏览器其自身是一个 HTML 文档。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```&lt;lang&gt;</span><br></pre></td></tr></table></figure></p>
+<p>写在html标签中的lang属性作用：声明当前页面的语言类型。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">head标签是html的头部也是所有头部元素的容器。head标签内的元素可包含脚本、样式表和提供页面的元信息等等。以下标签都可以添加到 head 部分：title、base、link、meta、script 以及style。头部的内容不会显示在浏览器里。</span><br><span class="line"></span><br><span class="line">```&lt;body&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">设置字符集，如果字符集不对，可能导致乱码。一般都是utf-8国际编码，例如```&lt;meta http-equiv=Content-Type content=&quot;text/html;charset=utf-8&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>相关标签，title定义文档的标题,一般建议不要超过32位<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```&lt;meta&gt;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><figcaption><span><meta>``` 元素可提供有关页面的元信息，比如针对搜索引擎和更新频度的描述和关键词。标签位于文档的头部，不包含任何内容。<meta> 标签的属性定义了与文档相关联的名称/值对。</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```&lt;link&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">一个简单的HTML结构就是</span><br><span class="line">```&lt;!DOCTYPE html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>lang</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;head&gt;</span><br></pre></td></tr></table></figure>
+   <figure class="highlight plain"><figcaption><span>charset</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><br></pre></td></tr></table></figure>
+   <figure class="highlight plain"><figcaption><span>http-equiv</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;title&gt;Document&lt;/title&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;body&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>整个框架被一个head和body包裹起来</p>
+<h3 id="常用标签"><a href="#常用标签" class="headerlink" title="常用标签"></a>常用标签</h3><p>h1-h6标签可定义标题<br>p标签定义段落<br>b/strong标签加粗(strong的加粗表示更加生动重要的文本)<br>em标签来表示强调的文本，斜体<br>u标签下划线<br>br标签表示回车换行<br>hr标签表示水平线<br>span标签被用来组合文档中的行内元素。<br>blockquote标签表示块引用<br>sub标签为下标<br>sup标签为上标</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```&lt;a&gt;```定义超链接，指定页面间的跳转。链接可以指向外部链接或者页面内部id锚点，可以在当前页面打开，新开窗口。</span><br><span class="line">```&lt;a href=&quot;指向的链接地址&quot;&gt;网址的ID&lt;/a&gt;```，例如```&lt;a href=&quot;https://www.baidu.com&quot; &gt;百度&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">```&lt;iframe&gt;```就是新建一个窗口会创建包含另外一个文档的内联框架（即行内框架）。所有iframe里都要写一个frameborder=0</span><br><span class="line">```&lt;iframe name=xxx src=&quot;#&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">```&lt;img&gt;```主要在网页中插入图像，可以定义图片替换文本、显示宽度和高度、是否带边框。</span><br><span class="line">```&lt;img src=&quot;图片地址&quot;  alt=&quot;图片名&quot; /&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">有序标签在页面的显示1. 2. 3.  a. b. c. I. II. III.</span><br><span class="line">无序标签显示为 · </span><br><span class="line">ol和li有序列表标签，可以使用type属性规定有序列表符号的类型。他们都有一个子标签```&lt;li&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">```&lt;form&gt;```是一个提交表单。定义提交方式、提交地址、表单字符集以及如何对其进行编码，需要提交的表单一定要放在form标签内。</span><br><span class="line">```&lt;input&gt;```一个简单的HTML表单，包含两个文本输入框和一个提交按钮。</span><br><span class="line">```&lt;a href=&quot;xxx&quot;&gt;link&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>action</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;input type=&quot;text&quot; name=&quot;usernmae&quot;&gt;</span><br></pre></td></tr></table></figure>
+<pre><code><figure class="highlight plain"><figcaption><span>type</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;</span><br></pre></td></tr></table></figure>
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```&lt;button&gt;</span><br></pre></td></tr></table></figure>
+<p>button标签定义一个按钮<br>提交按钮<br><code>&lt;button type=&quot;submit&quot; value=&quot;提交&quot;&gt;提交&lt;/button&gt;</code></p>
+<p>table标签和tr标签，th标签和td标签，合并单元格。<br>th标签和td标签，合并单元格。例如<br><code>&lt;table width=&quot;300&quot; border=&quot;1&quot; cellspacing=&quot;0&quot;&gt;</code> </p>
+<pre><code>```&lt;tr&gt;``` 
+    ```&lt;th&gt;班级&lt;/th&gt;``` 
+    ```&lt;th&gt;日期&lt;/th&gt;``` 
+    ```&lt;th&gt;标题&lt;/th&gt;``` 
+```&lt;/tr&gt;``` 
+```&lt;tr&gt;``` 
+    ```&lt;td&gt;一班&lt;/td&gt;``` 
+    ```&lt;td&gt;2018-12-22&lt;/td&gt;``` 
+    ```&lt;td&gt;标题1&lt;/td&gt;``` 
+```&lt;/tr&gt;``` 
+```&lt;tr&gt;``` 
+    ```&lt;td&gt;二班&lt;/td&gt;``` 
+    ```&lt;td&gt;2018-12-22&lt;/td&gt;``` 
+    ```&lt;td&gt;标题2&lt;/td&gt;``` 
+```&lt;/tr&gt;``` 
+</code></pre><p><code>&lt;/table&gt;</code> </p>
 
-hexo实际上可以看到一个程序，是用来生成博客页面。在本地电脑上用hexo生成了博客页面，上传到github的仓库，就可以让大家访问仓库下的页面了，也就是访问博客，这就是Hexo的原理。
-
-安装hexo首先在计算机随便（你喜欢就好）一个盘里创建一个空的文件夹（hexo）,比如我的在F盘
- 
-右键这个文件，点击git bash here，然后在git里面输入$npm install -g hexo-cil，直到下面出现+ hexo-cli@1.1.0就算安装成功了
- 
-安装成功后关闭git！关闭gi...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/12/22</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
     </article>
+    <!-- license  -->
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2018/12/19/HTTP包括哪些部分/">
-            
-                <span>HTTP请求，响应，curl命令</span>
-        </a>
-        <div class="abstract-content">
-            HTTP 请求包括哪些部分请求报文(请求行/请求头/请求数据/空行)
-请求行求方法字段、URL字段和HTTP协议版本例如：GET / HTTP/1.1
-请求方法： GET、POST
-请求头User-Agent：产生请求的浏览器类型。Accept：客户端可识别的内容类型列表。Host：主机地址
-请求数据post方法中，会把数据以key value形式发送请求
-空行发送回车符和换行符，通知服务器以下不再有请求头请求的格式1 动词 路径 协议/版本2 Key1: value12 Key2: value22 Key3: value32 Content-Type: application/x-ww...
+        <div class="license-wrapper">
+            <p>原文作者：<a href="http://hty666.github.io">hty</a>
+            </p><p>原文链接：<a href="http://hty666.github.io/2018/12/22/html的常用标签/">http://hty666.github.io/2018/12/22/html的常用标签/</a>
+            </p><p>发表日期：<a href="http://hty666.github.io/2018/12/22/html的常用标签/">December 22nd 2018, 9:03:24 pm</a>
+            </p><p>更新日期：<a href="http://hty666.github.io/2018/12/22/html的常用标签/">December 22nd 2018, 10:56:41 pm</a>
+            </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/12/19</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2018/12/19/关于HTML/">
-            
-                <span>关于HTML</span>
-        </a>
-        <div class="abstract-content">
-            W3CWorld Wide Web Consortium (W3C)是主要的国际标准组织为万维网(缩写WWW或W3)
-历史万维网联盟(W3C)成立蒂姆•伯纳斯-李之后他离开了欧洲核研究组织(欧洲核子研究中心在1994年10月)。 它成立于麻省理工学院的 计算机科学实验室(麻省理工学院/ LCS)的支持欧洲委员会和国防高级研究计划局(美国国防部高级研究计划局),曾开创了阿帕网,一个前辈的互联网。
-组织试图促进行业成员之间的兼容性和一致性的采用新标准由W3C定义的。 不兼容的版本的HTML是由不同的供应商提供,导致网页是如何显示不一致。 该财团试图让这些供应商实现一套核心原则和组件选择的财团...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/12/19</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2018/12/19/git init，git add，git commit -v这三个命令的使用/">
-            
-                <span>git init，git add，git commit -v这三个命令的使用</span>
-        </a>
-        <div class="abstract-content">
-            git init用法进入某个空的文件夹下，打开Git Bash命令窗口输入git init作用主要用来初始化一个空的git本地仓库。执行完上面的命令，当前目录下会自动生成.git隐藏文件夹，该隐藏文件夹就是git版本库
-
-git init
-git add用法命令将文件内容添加到索引(将修改添加到暂存区)作用以准备为下一次提交分段的内容
-git commit -vgit commit -v用法在git bush中输入git commit后会进入vim模式作用显示有哪些更改的退出的时候狂按ESC然后输入:q!（冒号也要输入)
- 
-git commit-v
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/12/19</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2018/12/19/ls cat mv touch4个命令的使用以及如何使用 explainshell.com 这个网站/">
-            
-                <span>ls cat mv touch4个命令的使用以及如何使用 explainshell.com 这个网站</span>
-        </a>
-        <div class="abstract-content">
-            ls1$ ls：中文（罗列） 全拼（list） 显示当前下面的文件及文件夹
-可搭配的指令ls -a 显示当前目录下的所有文件及文件夹包括隐藏的.和..等ls -al 显示当前目录下的所有文件及文件夹包括隐藏的.和..等并显示详细信息，详细信息包括大小，属组，创建时间ls -l //显示不隐藏的文件与文件夹的详细信息
-More info: ls
-cat1$ cat: 中文（链接） 全拼（CATenate） 可以一次显示整个文件或从键盘创建一个文件或者将几个文件合并为一个文件
-More info: cat
-mv1$ mv: 中文（移动/重命名） 全拼（move） 就是源路径/目标路径，移动节...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/12/19</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2018/12/19/hello-world/">
-            
-                <span>Hello World</span>
-        </a>
-        <div class="abstract-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-More info: Writing
-Run server1$ hexo server
-More...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/12/19</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2018/12/22/hexo创建博客/" title="如何用hexo创建一个博客">
+                    <div class="prevTitle">如何用hexo创建一个博客</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -622,6 +560,24 @@ More...
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#最基础的HTML结构"><span class="toc-number">1.</span> <span class="toc-text">最基础的HTML结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常用标签"><span class="toc-number">2.</span> <span class="toc-text">常用标签</span></a></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -855,6 +811,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
